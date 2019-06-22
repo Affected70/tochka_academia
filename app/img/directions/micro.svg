@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="16119 7301 64.396 90.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3963eb;
+      }
+
+      .cls-2 {
+        filter: url(#mic);
+      }
+    </style>
+    <filter id="mic" x="16119" y="7301" width="64.396" height="90.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="mic-2" data-name="mic" class="cls-1" d="M52.155,27.706V37.7c0,8.106-5.956,16.779-19.57,17.975V65.25H42.01a1.454,1.454,0,0,1,1.45,1.45v4.35a1.454,1.454,0,0,1-1.45,1.45H15.91a1.454,1.454,0,0,1-1.45-1.45V66.7a1.453,1.453,0,0,1,1.445-1.45h9.43V55.675C11.712,54.479,5.76,45.8,5.76,37.7V27.706a1.451,1.451,0,0,1,1.45-1.45H9.385a1.454,1.454,0,0,1,1.45,1.45V37.7c0,4.844,3.818,13.05,18.125,13.05S47.085,42.544,47.085,37.7V27.706a1.45,1.45,0,0,1,1.445-1.45h2.18A1.445,1.445,0,0,1,52.155,27.706ZM28.96,43.5c8.505,0,10.875-3.5,10.875-5.8V26.252H18.085V37.7c0,2.3,2.363,5.8,10.875,5.8ZM39.835,5.8c0-2.309-2.37-5.8-10.875-5.8S18.085,3.491,18.085,5.8V21.177h21.75Z" transform="translate(16122.24 7307)"/>
+  </g>
+</svg>
