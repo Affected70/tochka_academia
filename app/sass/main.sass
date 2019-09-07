@@ -463,7 +463,7 @@ section, header
 			background-color: lighten($green, 5%)
 			color: $whiteColor
 			text-shadow: 0 3px 6px black /* Параметры тени */
-			box-shadow: 0 3px 20px $green; /* Параметры тени */
+			box-shadow: 0 3px 20px $green /* Параметры тени */
 		&:focus
 			outline: 0
 			text-decoration: none
@@ -783,7 +783,40 @@ section, header
 		// height: 100%
 		// opacity: 0.3
 		left: -200px
-
+	#video_buttons
+		position: absolute
+		top: 85%
+		margin: 0 auto
+		width: 100%
+		left: 50%
+	.video_button
+		left: -50.5%
+		margin-left: 10px
+		margin-right: 10px
+		font-size: 21px
+		margin-top: 1.5vw
+		background: #fff
+		border-radius: 15px
+		padding: 3px 28px
+		box-shadow: 0 3px 20px rgba(0,0,0,0.16) /* Параметры тени */
+		color: $directionsTextColor
+		border: 2px solid $green
+		transition: background-color .2s ease
+		text-decoration: none
+		&.active
+			background-color: lighten($green, 5%)
+			color: $whiteColor
+			text-shadow: 0 3px 6px black /* Параметры тени */
+			box-shadow: 0 3px 20px $green /* Параметры тени */
+		&:hover
+			color: #fff
+			background-color: lighten($green, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($green, 5%)
+			&::after
+				opacity: .32
 
 .play-video-icon
 	font-size: 3.4vw

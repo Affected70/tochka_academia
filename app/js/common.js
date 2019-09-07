@@ -1,9 +1,9 @@
 
 // Custom JS
+var activeVideo = 'vk.com/video_ext.php?oid=-95463241&id=456239019&hash=abb155fc2fe8f68d&hd=2';
 
 $(document).ready(function()
 {
-
         // $(".preloader").delay(1800).fadeOut();
         // $(".overlay-loader").delay(1300).fadeOut("slow");
         // $(window).load(function () {
@@ -236,8 +236,41 @@ $('.send-message').click(function(e) {
                 patterns: {
                     vk: {
 
+/*                        index: 'vk.com/',
+                       // src: '//vk.com/video_ext.php?oid=-95463241&id=456239019&hash=abb155fc2fe8f68d&hd=2'
+                        id: function(url) {
+                            console.log('URL: ' + url);
+
+                            /!*                     var activeVideo = $('.video_button.active');
+                                                 var videoName = activeVideo.text;
+                                                 console.log("videoName: " + videoName);
+
+                                                 if (videoName === 'Видео 1') {
+                                                     console.log("Returned -95463241&id=456239019&hash=abb155fc2fe8f68d&hd=2");
+                                                     return '-95463241&id=456239019&hash=abb155fc2fe8f68d&hd=2';
+                                                 }
+
+                                                 else if (videoName === 'Видео 2') {
+                                                     console.log("Returned -95463241&id=456239023&hash=b99367dfd15fbde3&hd=2");
+                                                     return '-95463241&id=456239023&hash=b99367dfd15fbde3&hd=2';
+                                                 }
+
+                                                 else if (videoName === 'Видео 3') {
+                                                     console.log("Returned -95463241&id=456239023&hash=b99367dfd15fbde3&hd=2");
+                                                     return '-95463241&id=456239023&hash=b99367dfd15fbde3&hd=2';
+                                                 }*!/
+
+                            return url;
+                        },
+
+                        src: '//%url%',*/
+
                         index: 'vk.com/',
-                        src: '//vk.com/video_ext.php?oid=-95463241&id=456239019&hash=abb155fc2fe8f68d&hd=2'
+                        id: function(url) {
+                            console.log('activeVideo: ' + activeVideo);
+                            return activeVideo;
+                        },
+                        src: '//%id%'
                     }
                 }
             }
@@ -687,6 +720,43 @@ $(document).ready(function()
             return false;
         }
         );
+
+    $('.video_button').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation()
+        $('#video_buttons a').removeClass('active');
+        $(this).addClass('active');
+        $(this).tab('show');
+
+        console.log('video button working' + this.text);
+        var videoNum = this.text;
+
+        var left_image = $('#video-left-bg-image');
+        var right_image = $('#video-right-bg-image');
+
+        var playIcon = $('.play-video-icon');
+
+
+        playIcon.animate({ opacity: 0.7 }).hide().fadeIn("slow");
+
+        if (videoNum === 'Видео 1') {
+            left_image.css('background-image', 'url(../img/video/left_bg_image.jpg)' ).animate({ opacity: 0.7 }).hide().fadeIn("slow");
+            right_image.css('background-image', 'url(../img/video/right_bg_image.jpg)' ).animate({ opacity: 0.7 }).hide().fadeIn("slow");
+            activeVideo = "vk.com/video_ext.php?oid=-95463241&id=456239019&hash=abb155fc2fe8f68d&hd=2";
+        } else if (videoNum === 'Видео 2') {
+            left_image.css('background-image', 'url(../img/video/left_bg_image2.jpg)' ).animate({ opacity: 0.7 }).hide().fadeIn("slow");
+            right_image.css('background-image', 'url(../img/video/right_bg_image2.jpg)' ).animate({ opacity: 0.7 }).hide().fadeIn("slow");
+            activeVideo = "vk.com/video_ext.php?oid=-95463241&id=456239023&hash=b99367dfd15fbde3&hd=2";
+        } else if (videoNum === 'Видео 3') {
+            left_image.css('background-image', 'url(../img/video/left_bg_image3.jpg)' ).animate({ opacity: 0.7 }).hide().fadeIn("slow");
+            right_image.css('background-image', 'url(../img/video/right_bg_image3.jpg)' ).animate({ opacity: 0.7 }).hide().fadeIn("slow");
+            activeVideo = "vk.com/video_ext.php?oid=-95463241&id=456239024&hash=16da912bb32a3699&hd=2";
+        }
+
+        $(this).addClass('active');
+
+        console.log('video set');
+    });
 });
 
 // $(".mh-head.mm-sticky").mhead({
