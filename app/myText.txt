@@ -1,0 +1,14 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head></head>
+	<body>
+	<table>
+	<tr><td>Имя: </td><td>Академия "Точка"</td></tr>
+	<tr><td>Телефон: </td><td>9171314790</td></tr>
+	<tr><td>Сообщение: </td><td>1231</td></tr>
+	<tr><td>Направления: </td><td>Современный танец,Эстрадный вокал,Художественная гимнастика,Развитие и Коррекция</td></tr>
+	</table>
+	</body>
+	</html>

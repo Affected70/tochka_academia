@@ -1,0 +1,953 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 2000px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9vw
+						font-size: 1.13em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.25fr 0.8fr 1fr 0.5fr 0.7fr 0.8fr 0.9fr 0.9fr 2fr 2fr 20px
+
+	.s-directions
+		height: 640px
+		min-height: 640px
+		.right-bg-image, .left-bg-image
+			height: 640px
+			// opacity: 0.7
+		.right-bg-image
+			// right: -420px
+			opacity: 0.4
+		.left-bg-image
+			opacity: 0.5
+			// left: -108px
+
+	.s-features
+		height: 910px
+		min-height: 910px
+		.container
+			z-index: 100
+		.right-bg-image, .left-bg-image
+			height: 900px
+			opacity: 0.5
+		.right-bg-image
+			// right: -420px
+			// opacity: 0.3
+		.left-bg-image
+			// opacity: 0.3
+			// left: -108px
+		.header-button
+			
+
+	.s-contacts 
+		.h2
+			font-size: 3em
+		.forms 
+			#contactsInputName, #contactsInputPhone
+				height: 2.5vw
+			.form-control
+				font-size: 1.25em
+
+	.footer
+		min-height: 4.75vw
+		height: 4.75vw
+		.span
+			margin-top: -2.7vw
+		.footer-logo 
+			img
+				width: 10vw
+				margin-top: 0.5vw
+
+@media only screen and (max-width : 1900px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9vw
+						font-size: 1.13em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.25fr 0.8fr 1fr 0.5fr 0.7fr 0.8fr 0.9fr 0.9fr 1.9fr 2.1fr 20px
+							grid-template-rows: 33px
+
+
+	.logo-center
+		// margin-top: -90px
+		img
+			// margin-left: -70px
+			width: 95%
+
+	.s-photo
+		.right-bg-image
+			right: -100px
+			z-index: 0
+
+@media only screen and (max-width : 1800px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 1em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.25fr 0.8fr 1fr 0.5fr 0.7fr 0.8fr 0.9fr 0.9fr 1.9fr 2.1fr 20px
+
+
+
+	.s-directions
+		height: 620px
+		min-height: 620px
+		.right-bg-image, .left-bg-image
+			height: 620px
+			// opacity: 0.7
+		.right-bg-image
+			// right: -420px
+			opacity: 0.3
+			right: -3vw
+		.left-bg-image
+			opacity: 0.3
+			left: -2vw
+			// left: -108px
+
+	.s-features
+		height: 910px
+		min-height: 910px
+		.container
+			z-index: 100
+		.right-bg-image, .left-bg-image
+			height: 900px
+			opacity: 0.3
+		.right-bg-image
+			// right: -420px
+			// opacity: 0.3
+		.left-bg-image
+			// opacity: 0.3
+			// left: -108px
+		.header-button
+
+	.s-contacts 
+		.h2
+			font-size: 2.75vw
+		.forms 
+			#contactsInputName, #contactsInputPhone
+				height: 3vw
+			.form-control
+				font-size: 1.25em
+
+	.footer
+		min-height: 4.75vw
+		height: 4.75vw
+		.span
+			margin-top: -2.7vw
+			margin-left: 36vw
+		.footer-logo 
+			img
+				width: 10vw
+				margin-top: 0.5vw
+
+@media only screen and (max-width : 1700px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 1em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.25fr 0.8fr 1fr 0.5fr 0.7fr 0.8fr 0.9fr 0.9fr 2fr 2.2fr 20px
+
+	.logo-center
+		// margin-top: -90px
+		img
+			// margin-left: -70px
+			width: 90%
+
+	.s-about
+		.left-bg-image
+			left: 80px
+
+	.s-directions
+		.left-bg-image
+			left: -6vw
+
+	.s-teachers
+		.round-text
+			.p
+				font-size: 19px
+		.owl-carousel
+			.owl-stage-outer
+				margin-left: 65px
+				width: 1025px
+		.item
+			width: 18.9em
+		.right-bg-image, .left-bg-image
+			opacity: 0.5
+		.owl-theme .owl-nav .owl-prev 
+				left: -0.5em
+
+		.owl-theme .owl-nav .owl-next 
+				left: 78.5em
+
+	.s-photo
+		.right-bg-image
+			background-position: right
+			right: -170px
+			// opacity: 0.3
+		.left-bg-image
+			background-position: left
+			// opacity: 0.3
+			left: -150px
+
+	.s-contacts
+		height: 1200px
+		min-height: 1200px
+		.left-bg-image, .right-bg-image
+			top: 30px
+		.left-bg-image
+			left: -60px
+		.right-bg-image
+			right: -160px
+
+	.footer
+		min-height: 5vw
+		height: 5vw
+		.footer-logo
+			img
+				margin-top: 0.7vw
+		.span
+			position: absolute
+			margin-top: -3vw
+			margin-left: 36vw
+			font-size: 1em
+			color: $whiteColor
+			text-shadow: 0 3px 6px black /* Параметры тени */
+
+@media only screen and (max-width : 1600px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 1em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.25fr 0.8fr 1fr 0.5fr 0.7fr 0.8fr 0.9fr 0.9fr 2fr 2.5fr 20px
+							grid-template-rows: 33px
+							a
+								padding: 1px 10px
+
+	.s-directions
+		height: 620px
+		min-height: 620px
+		.right-bg-image, .left-bg-image
+			height: 620px
+			// opacity: 0.7
+		.right-bg-image
+			// right: -420px
+			opacity: 0.3
+			right: -5vw
+		.left-bg-image
+			opacity: 0.3
+			left: -8vw
+			// left: -108px
+
+	.s-about 
+		.about-text
+			width: 60vw
+		.p
+			font-size: 1.679em
+		.left-bg-image
+			left: 40px
+			width: 450px
+
+	.s-features
+		height: 910px
+		min-height: 910px
+		.container
+			z-index: 100
+		.right-bg-image, .left-bg-image
+			height: 900px
+			opacity: 0.2
+		.right-bg-image
+			// right: -420px
+			// opacity: 0.3
+			right: -50px
+		.left-bg-image
+			// opacity: 0.3
+			// left: -108px
+			left: -50px
+		.header-button
+
+	.s-photo
+		.right-bg-image
+			background-position: right
+			right: -170px
+			// opacity: 0.3
+		.left-bg-image
+			background-position: left
+			// opacity: 0.3
+			left: -150px
+
+	.s-contacts 
+		.h2
+			font-size: 2.75vw
+		.forms 
+			#contactsInputName, #contactsInputPhone
+				height: 3vw
+			.form-control
+				font-size: 1.25em
+		.left-bg-image, .right-bg-image
+			top: 50px
+		.left-bg-image
+			left: -80px
+		.right-bg-image
+			right: -180px
+
+	.footer
+		min-height: 5vw
+		height: 5vw
+		.span
+			margin-top: -2.7vw
+			margin-left: 35vw
+		.footer-logo 
+			img
+				width: 10vw
+				margin-top: 0.5vw
+
+
+@media only screen and (max-width : 1500px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 1em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						margin-top: -10px
+						.top-buttons
+							grid-template-columns: 0.45fr 0.8fr 1fr 0.5fr 0.7fr 0.8fr 0.9fr 0.9fr 1.9fr 3fr 20px
+							grid-template-rows: 33px
+							a
+								padding: 1px 10px
+
+	.logo-center
+		// margin-top: -90px
+		img
+			// margin-left: -70px
+			width: 85%
+
+	.s-about 
+		.about-text
+			width: 60vw
+		.p
+			font-size: 1.6em
+		.left-bg-image
+			left: 30px
+			width: 400px
+
+	.logo 
+		img
+			width: 184px
+			margin-top: -22px
+
+	.s-directions
+		.left-bg-image
+			left: -12vw
+
+	.s-teachers
+		.left-bg-image, .right-bg-image
+			opacity: 0.3
+	.s-photo
+		.owl-my-custom
+			width: 790px
+			margin-left: 170px
+		.owl-carousel
+			.owl-stage-outer
+				margin-left: 0
+				width: 790px
+		.item
+			width: 240px
+			height: 280px
+			margin-left: 0.7em
+		.owl-theme .owl-nav .owl-prev 
+			left: -5.5em
+		.owl-theme .owl-nav .owl-next 
+			left: 57.5em
+
+	.s-contacts
+		height: 1125px
+		min-height: 1125px
+		.left-bg-image, .right-bg-image
+			top: 50px
+		.left-bg-image
+			left: -146px
+		.right-bg-image
+			right: -183px
+		.forms
+			.form-control
+				font-size: 1.15em
+		.header-button
+			font-size: 26px
+	.footer
+		min-height: 5vw
+		height: 5vw
+		.span
+			margin-top: -2.9vw
+			margin-left: 35vw
+
+@media only screen and (max-width : 1400px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 1em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						margin-top: -10px
+						.top-buttons
+							grid-template-columns: 0.35fr 0.9fr 1fr 0.5fr 0.7fr 0.7fr 0.7fr 0.7fr 2fr 3.5fr 20px
+							grid-template-rows: 33px
+							a
+								padding: 1px 10px
+
+	.s-about
+		.left-bg-image
+			width: 370px
+			left: 50px
+			margin-top: -50px
+
+		min-height: 45vw
+		height: 630px
+		.about-text
+			width: 60vw
+		.p
+			font-size: 1.54em
+
+	.s-directions
+		height: 620px
+		min-height: 620px
+		.right-bg-image, .left-bg-image
+			height: 620px
+			// opacity: 0.7
+		.right-bg-image
+			// right: -420px
+			opacity: 0.3
+			right: -5vw
+		.left-bg-image
+			opacity: 0.3
+			left: -12vw
+			// left: -108px
+
+
+
+	.s-features
+		height: 910px
+		min-height: 910px
+		.container
+			z-index: 100
+		.right-bg-image, .left-bg-image
+			height: 900px
+			opacity: 0.3
+		.right-bg-image
+			// right: -420px
+			// opacity: 0.3
+			right: -50px
+		.left-bg-image
+			// opacity: 0.3
+			// left: -108px
+			left: -50px
+		.header-button
+
+
+
+	.s-contacts 
+		height: 1065px
+		min-height: 1065px
+		.h2
+			font-size: 2.75vw
+		.forms 
+			#contactsInputName, #contactsInputPhone
+				height: 3vw
+			.form-control
+				font-size: 1.05em
+
+	.footer
+		min-height: 5vw
+		height: 5vw
+		.span
+			margin-top: -3vw
+			margin-left: 35vw
+		.footer-logo 
+			img
+				width: 10vw
+				margin-top: 0.5vw
+
+	.common
+		.h1
+			font-size: 3.1em
+
+	.logo 
+		img
+			width: 182px
+			margin-top: -22px
+
+@media only screen and (max-width : 1350px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 0.95em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						margin-top: -10px
+						.top-buttons
+							grid-template-columns: 0.4fr 0.9fr 1fr 0.5fr 0.7fr 0.7fr 0.7fr 0.7fr 2fr 3.5fr 20px
+							grid-template-rows: 31px
+							a
+								padding: 1px 10px
+
+	.s-directions
+		height: 620px
+		min-height: 620px
+		.right-bg-image, .left-bg-image
+			height: 620px
+			// opacity: 0.7
+		.right-bg-image
+			// right: -420px
+			opacity: 0.3
+			right: -5vw
+		.left-bg-image
+			opacity: 0.3
+			left: -12vw
+			// left: -108px
+
+	.s-about 
+		min-height: 49vw
+		.about-text
+			width: 790px
+		.p
+			font-size: 1.54em
+
+	.s-features
+		height: 910px
+		min-height: 910px
+		.container
+			z-index: 100
+		.right-bg-image, .left-bg-image
+			height: 900px
+			opacity: 0.3
+		.right-bg-image
+			// right: -420px
+			// opacity: 0.3
+			right: -50px
+		.left-bg-image
+			// opacity: 0.3
+			// left: -108px
+			left: -50px
+		.header-button
+
+	.s-teachers
+		.owl-carousel
+			.owl-stage-outer
+				margin-left: 230px
+				width: 685px
+		.item
+			width: 18.9em
+		.owl-theme .owl-nav .owl-prev 
+				left: 11.5em
+		.owl-theme .owl-nav .owl-next 
+				left: 66em
+
+	.s-contacts 
+		.h2
+			font-size: 2.75vw
+		.forms 
+			#contactsInputName, #contactsInputPhone
+				height: 3vw
+			.form-control
+				font-size: 1.05em
+
+	.footer
+		min-height: 5vw
+		height: 5vw
+		.span
+			margin-top: -3vw
+			margin-left: 35vw
+		.footer-logo 
+			img
+				width: 10vw
+				margin-top: 0.5vw
+
+	.logo 
+		img
+			width: 178px
+			margin-top: -22px
+
+@media only screen and (max-width : 1300px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 0.95em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.45fr 1.1fr 1fr 0.5fr 0.6fr 0.6fr 0.6fr 0.7fr 1fr 3.6fr 20px
+							grid-template-rows: 31px
+							a
+								padding: 1px 10px
+
+	.logo-center
+		margin-top: -130px
+		img
+			// margin-left: -70px
+			width: 80%
+
+	.s-directions
+		height: 620px
+		min-height: 620px
+		.right-bg-image, .left-bg-image
+			height: 620px
+			// width: 400px
+			// opacity: 0.7
+		.right-bg-image
+			// right: -420px
+			opacity: 0.3
+			right: -5vw
+		.left-bg-image
+			opacity: 0.3
+			left: -12vw
+			// left: -108px
+
+	.s-about 
+		min-height: 49vw
+		.about-text
+			width: 55vw
+		.p
+			font-size: 22px
+		.left-bg-image
+			width: 360px
+			left: 20px
+			margin-top: -8px
+
+	.s-features
+		height: 910px
+		min-height: 910px
+		.container
+			z-index: 100
+		.right-bg-image, .left-bg-image
+			height: 900px
+			opacity: 0.3
+		.right-bg-image
+			// right: -420px
+			// opacity: 0.3
+			right: -50px
+		.left-bg-image
+			// opacity: 0.3
+			// left: -108px
+			left: -50px
+		.header-button
+
+	.s-teachers
+		.left-bg-image, .right-bg-image
+			opacity: 0.4 
+		.owl-my-custom
+			.owl-nav
+				.owl-next, .owl-prev
+					top: 15em
+			.round-text
+				.h2
+					font-size: 1.8em
+				.p
+					font-size: 18px
+		.p
+			font-size: 1.1em
+		.item
+			// width: 17.5em
+			height: 370px
+			// margin-left: 1.5em
+
+	.owl-carousel
+		.owl-stage
+			.owl-item
+				// margin-right: 10px
+		.owl-stage-outer
+			margin-left: 105px
+			width: 950px
+
+	.owl-theme
+		.owl-nav
+			.owl-next
+				left: 76em
+			.owl-prev
+				left: 3em
+
+	.s-photo
+		.right-bg-image
+			// right: -170px
+			opacity: 0.4
+		.left-bg-image
+			opacity: 0.4
+			// left: -150px
+
+	.s-contacts
+		height: 1030px
+		min-height: 1030px
+		.h2
+			font-size: 2.75vw
+		.forms 
+			#contactsInputName, #contactsInputPhone
+				height: 3vw
+			.form-control
+				font-size: 1.05em
+		.left-bg-image
+			left: -200px
+		.right-bg-image
+			right: -200px
+
+	.footer
+		min-height: 5vw
+		height: 5vw
+		.span
+			margin-top: -3vw
+			margin-left: 35vw
+			font-size: 0.9em
+		.footer-logo 
+			img
+				width: 10vw
+				margin-top: 0.5vw
+
+	.logo 
+		img
+			width: 178px
+			margin-top: -22px
+/* Large Devices, Wide Screens */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 0.95em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.45fr 1.1fr 1fr 0.5fr 0.6fr 0.4fr 0.4fr 0.5fr 0.5fr 3.8fr 20px
+
+	.logo-center
+		// margin-top: -90px
+		img
+			// margin-left: -70px
+			width: 90%
+
+	.s-directions
+		.one-row-text
+			font-size: 20px
+		.p 
+			font-size: 18px
+
+	.s-features
+		height: 780px
+		min-height: 780px
+		.feature-img
+			// width: 411px
+			width: 350px
+		.header-button
+			margin-top: 50px
+		.left-bg-image, .right-bg-image
+			background-size: contain
+			width: 490px
+			height: 790px
+			opacity: 0.2
+		.round-text
+			width: 45%
+
+	.s-teachers
+		height: 26vw
+		min-height: 690px
+		.left-bg-image
+			background-size: contain
+			width: 430px
+		.right-bg-image
+			background-size: contain
+			width: 460px
+		.owl-my-custom
+			margin-left: -105px
+			.owl-dots
+				margin-left: 196px
+
+	.s-photo
+		.owl-my-custom
+			margin-left: 65px
+
+	.s-contacts
+		height: 950px
+		min-height: 950px
+		.left-bg-image
+			left: -230px
+		.right-bg-image
+			right: -152px
+			width: 450px
+		.left-bg-image, .right-bg-image
+			opacity: 0.5
+			top: 10px
+		.header-button
+			font-size: 24px
+
+	.footer
+		.span
+			margin-left: 33vw
+
+
+@media only screen and (max-width : 1150px)
+	.s-about
+		.p
+			font-size: 22px
+		.about-text
+			width: 60vw
+
+@media only screen and (max-width : 1100px)
+	body
+		&.ishome
+			.site-header
+				.top-line
+					.header-button
+						// width: 9.33vw
+						font-size: 0.9em
+						&.first-lesson
+							// width: 19vw
+					.header-buttons
+						padding-top: 0
+						.top-buttons
+							grid-template-columns: 0.45fr 1.1fr 1fr 0.5fr 0.6fr 0.2fr 0.2fr 0.1fr 0.1fr 3.9fr 20px
+							grid-template-rows: 30px
+
+	.s-about
+		.p
+			font-size: 20px
+		.about-text
+			width: 55vw
+		.left-bg-image
+			margin-top: -30px
+			width: 340px
+
+@media only screen and (max-width : 1050px)
+	.s-about
+		.p
+			font-size: 20px
+		.about-text
+			width: 60vw
+		.left-bg-image
+			margin-top: -30px
+			width: 340px
+			left: 0
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1000px)
+	/**/
+
+	.s-about
+		height: 560px
+		.left-bg-image
+			display: none
+		.round-text
+			margin: auto
+
+
+	.s-directions
+		height: 860px
+		.round-text
+			width: 170px
+		.next-row
+			margin-top: 10px
+		.left-bg-image, .right-bg-image
+			height: 852px
+		.left-bg-image
+			left: -17vw
+		.assign
+			.header-button
+				font-size: 24px
+			
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+

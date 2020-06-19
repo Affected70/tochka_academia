@@ -1,0 +1,1041 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "_mixins/rotate"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	display: none
+	background: white
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 925px
+			height: 100vh
+			background-color: $whiteColor
+			.top-line
+				padding-top: 23px
+				position: absolute
+				width: 100%
+				.header-buttons
+					padding-top: 6px
+				.header-button
+					border: 2px solid rgba(255, 255, 255, .15);
+					margin-left: 5px
+					color: #fff
+					text-decoration: none
+					text-shadow: 0 3px 6px black /* Параметры тени */
+					font-size: 2vh
+					border-radius: 20px
+					width: 16%
+					font-weight: 601
+					&.first-lesson
+						width: 32%
+						background: rgba(75, 175, 88, .13)
+						&:focus, &:hover
+							text-decoration: none
+							color: #fff
+						&:hover
+							background-color: lighten($green, 5%)
+							&::after
+								opacity: .22
+						&:active
+							background-color: darken($green, 5%)
+							&::after
+								opacity: .32
+
+
+.logo
+	img
+		width: 218px
+		height: auto
+		margin-left: 45px
+		margin-top: -13px
+
+
+.inline-test
+	display: inline
+
+.p
+	text-shadow: 0 0.1vh 0 rgba(0, 0, 0, 0.2); /* Параметры тени */
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+	z-index: 999
+	background-image: url(../img/preloader.gif)
+	background-repeat: no-repeat
+	background-position: center
+
+
+
+.header-button
+	padding: 0 /* чтобы убрать внутренний падинг от md-col */
+	display: inline-block
+	background-color: transparent
+	letter-spacing: 1px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&:hover
+		background-color: lighten($green, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($green, 5%)
+		&::after
+			opacity: .32
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.header-flex
+	display: flex
+	height: 100%
+	// position: relative
+	top: 0
+
+.flex-center
+	margin: auto
+
+.header-composition
+	text-align: center
+	color: $whiteColor
+	padding-top: 110px
+	h1
+		font-size: 50px
+		line-height: 70px
+		text-shadow: 0 3px 6px black /* Параметры тени */
+		font-weight: 400
+
+.common
+	.h1
+		font-size: 66px
+		font-weight: 400
+		text-shadow: 0 3px 6px rgba(129, 67, 67, .51); /* Параметры тени */
+		margin: 0
+		color: $headerColor
+	.p
+		font-size: 20px
+		color: $paragraphColor
+		letter-spacing: 1
+
+.s-about
+	text-align: center
+	height: 75vh
+	min-height: 750px
+	.p
+		font-size: 28px
+		font-weight: 400
+		text-shadow: 0 3px 6px rgba(129, 67, 67, .21); /* Параметры тени */
+		color: $headerColor
+		text-align: left
+	.about-text
+		padding-left: 30px
+
+.round-text	
+		box-sizing: border-box
+		text-align: justify
+		border: none
+		border-radius: 20px
+		box-shadow: 0 3px 20px rgba(0,0,0, 0.16); /* Параметры тени */
+		background-color: $whiteColor
+
+.s-directions
+	text-align: center
+	height: 65vh
+	min-height: 603px
+	width: 100%
+	line-height: 1.5
+	letter-spacing: 0
+	.h1
+		padding-top: 20px
+	.round-text
+		width: 15%
+		text-align: center
+		margin: 0 15px
+		height: 229px
+	.p
+		font-size: 20px
+		color: $directionsTextColor
+		margin: 0
+	.one-row-text
+		font-size: 24px
+		padding-top: 10px
+	.one-row
+		.header-button
+			margin-top: 0
+	.long-text
+		margin-left: -10px
+	.assign
+		.header-button
+			font-size: 30px
+			margin-top: 6%
+			background: #fff
+			border-radius: 15px
+			padding: 3px 40px
+			box-shadow: 0 3px 20px rgba(0,0,0,0.16); /* Параметры тени */
+			letter-spacing: 1
+
+
+	.header-button
+		position: relative
+		color: $directionsTextColor
+		border: 2px solid $green;
+		text-decoration: none
+		font-size: 16px
+		border-radius: 10px
+		padding: 0 15px
+		margin: 10px 0
+		box-shadow: 0 3px 20px rgba(0,0,0,0.16); /* Параметры тени */
+		&:focus
+			color: $directionsTextColor
+			outline: 0
+		&:hover
+			text-decoration: none
+			color: #fff
+			background-color: lighten($green, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($green, 5%)
+			&::after
+				opacity: .32
+
+.icon-mask
+	height: 95px
+	fill: red
+	color: red
+	margin-top: 10%
+
+.s-features
+	text-align: center
+	height: 80vh
+	min-height: 864px
+	width: 100%
+	line-height: 1.5
+	letter-spacing: 0
+	.h1
+		padding-top: 20px
+	.round-text
+		width: 40%
+		text-align: center
+		margin: 50px 50px
+		.p
+			width: 85%
+			text-align: center
+			margin: auto
+			font-size: 20px
+			line-height: 1.3
+			color: $textColor
+			padding: 30px 0
+	.book
+		// width: 411px
+		padding-top: 20px
+	.header-button	
+		width: 20%
+		font-size: 1.1em
+		margin-top: 50px
+		border-radius: 20px
+		padding: 10px 15px
+		margin-right: 2%
+		box-shadow: 0 3px 20px rgba(0,0,0,0.16); /* Параметры тени */
+		letter-spacing: 1
+		color: #000
+		text-shadow: 0 3px 6px rgba(129, 67, 67, 0.5); /* Параметры тени */
+		border: 2px solid $green
+		&.active
+			background-color: lighten($green, 5%)
+			color: $whiteColor
+			text-shadow: 0 3px 6px black /* Параметры тени */
+			box-shadow: 0 3px 20px $green; /* Параметры тени */
+		&:focus
+			outline: 0
+			text-decoration: none
+		&:hover
+			text-decoration: none
+			color: #fff
+			background-color: lighten($green, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($green, 5%)
+			&::after
+				opacity: .32
+			// &:focus
+			// color: $whiteColor
+
+.s-teachers
+	text-align: center
+	height: 80vh
+	min-height: 770px
+	line-height: 1.5
+	letter-spacing: 0
+	.h1
+		padding-top: 20px
+	.p
+		line-height: 1.5
+		font-size: 20px
+		color: $directionsTextColor
+		margin: 0
+		padding-top: 20px
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); /* Параметры тени */
+	.teachers
+		.round-text
+			text-align: center
+			margin-top: 15%
+			position: relative
+			.h2
+				text-align: center
+				font-size: 38px
+				color: #000
+				text-shadow: 0 3px 6px rgba(129, 67, 67, 0.5); /* Параметры тени */
+				margin: 0
+			.p
+				color: $textColor
+				margin-bottom: 20px
+			.img
+				width: 187px
+				text-align: center
+				display: inline
+	.item
+		width: 21em
+		height: 410px
+		margin-left: 1.5em
+
+.owl-carousel .owl-stage:after
+	display: inline !important
+
+.teachers
+	.owl-nav
+		.owl-prev, .owl-next
+			border-radius: 3em
+			padding: 0.35em
+			width: 3.8em
+			height: 3.8em
+			padding-top: 0.6em
+			background-color: rgba(255,255,255, 0.5)
+			top: 17em
+			transition: all 0.5s ease
+			-webkit-transition: all 0.5s ease
+			box-shadow: 0 3px 10px rgba(0,0,0, 0.65)
+			transition: background-color .5s ease
+			&:focus, &:hover
+				color: #fff
+			&:focus > .nav-arrow, &:hover > .nav-arrow
+				color: #fff
+			&:hover
+				background-color: lighten($green, 5%)
+				&::after
+					opacity: .22
+			&:active
+				background-color: darken($green, 5%)
+				&::after
+					opacity: .32
+
+.owl-theme .owl-nav .owl-prev 
+		left: -4.5em
+
+.owl-theme .owl-nav .owl-next 
+		left: 82.5em
+
+.nav-arrow
+	color: $green
+	font-size: 2.5em
+	&.left-nav-arrow
+		margin-left: 0.15em
+		margin-top: 0.05em
+	&.right-nav-arrow
+		margin-left: -0.1em
+
+.fa-rotate-45
+	+rotate(45deg)
+
+.fa-rotate-225
+	+rotate(225deg)
+
+.teachers .owl-dots
+	.owl-dot
+		width: 1.15em
+		height: 1.15em
+		border: 1px solid $green
+		border-radius: 10em
+		margin-left: 0.6em
+		box-shadow: 0 0 6px rgba(0,0,0, 1)
+		span
+			width: 0.54em
+			height: 0.54em
+			margin-left: 0.22em
+			margin-top: 0.23em
+			background-color: $green
+		&.active
+			background-color: $green
+			span
+				background-color: $green
+
+.owl-theme .owl-nav div 
+    position: absolute
+
+.s-video
+	text-align: center
+	height: 70vh
+	min-height: 70vh
+	line-height: 1.5
+	letter-spacing: 0
+	.h1
+		padding-top: 20px
+
+.play-video-icon
+	font-size: 6.6vh
+	color: $green
+	border-radius: 100vh
+	box-shadow: 0 3px 6px rgba(0,0,0, 1)
+	background-color: $whiteColor
+	width: 10vh
+	padding-left: 1.2vh
+	position: absolute
+	top: 45%
+	left: 47%
+	cursor: pointer
+	transition: all 0.5s ease
+	-webkit-transition: all 0.5s ease
+	box-shadow: 0 3px 10px rgba(0,0,0, 0.65)
+	transition: background-color .5s ease
+	&:focus
+		color: $green
+		outline: 0
+		&::after
+			opacity: .22
+	&:hover
+		color: #fff
+		background-color: lighten($green, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($green, 5%)
+		&::after
+			opacity: .32
+
+
+
+
+.s-contacts
+	text-align: center
+	height: 80vh
+	min-height: 170vh
+	line-height: 1.5
+	letter-spacing: 0
+	border-top: 1px solid rgba(58%, 60%, 60%, 0.5)
+	.header-button
+		font-size: 30px
+		margin-top: 3vh
+		background: #fff
+		border-radius: 15px
+		padding: 3px 40px
+		box-shadow: 0 3px 20px rgba(0,0,0,0.16) /* Параметры тени */
+		color: $directionsTextColor
+		border: 2px solid $green
+		transition: background-color .2s ease
+		text-decoration: none
+		&:focus
+			color: $directionsTextColor
+			outline: 0
+			&::after
+				opacity: .22
+		&:hover
+			color: #fff
+			background-color: lighten($green, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($green, 5%)
+			&::after
+				opacity: .32
+	.forms
+		width: 102vh
+		margin: auto
+		.form-text:first-child
+			padding-top: 2vh
+		.form-control
+			font-size: 3vh
+			box-shadow: 0 3px 6px rgba(0,0,0, 0.16)
+			letter-spacing: 0.35vh
+		.form-horizontal
+			.form-text
+
+
+		&:focus
+			border-color: $green !important
+		#inputName, #inputPhone
+			border-radius: 3vh
+			height: 8vh
+		#inputMessage
+			border-radius: 3vh
+			resize: none
+	.h1
+		padding-top: 4vh
+	.h2
+		font-size: 7.5vh
+		color: $greyColor
+		padding-top: 2.5vh
+	.contact-info
+		margin-top: 2vh
+	.contact-icons
+		font-size: 4vh
+		border-radius: 100vh
+		background-color: $whiteColor
+		padding: 0.9vh 1.7vh
+		transition: all 0.5s ease
+		-webkit-transition: all 0.5s ease
+		box-shadow: 0 3px 10px rgba(0,0,0, 0.65)
+		transition: background-color .5s ease
+		text-shadow: 0 1px 2px rgba(0,0,0, 1) /* Параметры тени */
+		&.fa-map-marker
+			color: $green
+		&.fa-phone
+			color: #EC51E2
+			padding: 0.85vh 1.3vh
+		&.fa-envelope
+			color: #672AF8
+			font-size: 3vh
+			padding: 1.38vh 1.38vh
+		&.fa-vk
+			color: #507299
+			font-size: 3vh
+			padding: 1.45vh 1.3vh
+
+
+	.p, .a
+		color: #4D4A4A
+		margin-top: 1vh
+		font-size: 2.2vh
+		&.second-phone
+			margin-top: -1vh
+		&.one-row
+			margin-top: 3vh
+	.a
+		display: block
+		&.one-row
+			margin-top: 2.7vh
+
+#map
+	// position: absolute
+	width: 1000px
+	height: 50vh
+
+.container > #map
+	width: 100%
+
+#map
+	width: 100vw
+	height: 40vh
+	margin-left: calc(-50vw + 50%)
+	margin-top: 2vh
+	// border: 1px solid rgba(23%, 52%, 23%, 0.2)
+	// box-shadow: 0 0px 10px rgba(23%, 52%, 23%, 0.4);
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+	// box-shadow: 0 0px 10px rgba(23%, 52%, 23%, 0.4);
+
+::-webkit-scrollbar 
+	width: 12px
+
+ 
+::-webkit-scrollbar-track 
+	-webkit-box-shadow: inset 0 0 6px rgba(23%, 52%, 23%, 0.5)
+	border-radius: 10px
+
+ 
+::-webkit-scrollbar-thumb
+	border-radius: 10px
+	-webkit-box-shadow: inset 0 0 12px rgba(23%, 52%, 23%, 1)
+
+.footer
+	text-align: center
+	min-height: 12.5vh
+	height: 12.5vh
+	background: #b4ddb4; /* Old browsers */
+	background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+	.footer-logo
+		img
+			width: 25vh
+			margin-top: 1.5vh
+	// .footer-logo img, .footer-logo .span
+	// 	display: inline-block
+	// .footer-logo 
+	.span
+		position: absolute
+		margin-top: -7vh
+		margin-left: 72vh
+		font-size: 1em
+		color: $whiteColor
+		text-shadow: 0 3px 6px black /* Параметры тени */
+		
+		// right: 15%
+		// top: 99vh
+
+.anchor-a
+	// display: block
+	// position: relative
+	// top: -250px
+	// visibility: hidden
+	z-index: 299
+	position: fixed
+	top: auto
+	left: auto
+	right: 5vh
+	bottom: 7.5vh
+	cursor: pointer
+	transition: background-color 0.2s linear
+
+#top
+	display: none
+
+.anchor
+	font-size: 3.5vh
+	border-radius: 3vh
+	background: rgba(255, 255, 255, 0.6)
+	color: lighten($green, 5%)
+	padding: 1.1vh 1.1vh
+	transition: all 0.5s ease
+	-webkit-transition: all 0.5s ease
+	transition: background-color .5s ease
+	text-shadow: 0 0.2vh 0.2vh rgba(0,0,0, 0.8) /* Параметры тени */
+	box-shadow: 0 3px 20px rgba(0,0,0, 0.56); /* Параметры тени */
+	&:focus
+		color: lighten($green, 5%)
+		outline: 0
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-color: lighten($green, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($green, 5%)
+		&::after
+			opacity: .32
+
+
+
+.hide
+	display: none
+
+.iziModal
+	box-shadow: 0 3px 16px rgba(0, 0, 0, 0.59)
+	background: white
+	.iziModal-header-title
+		font-family: $default-font !important
+		line-height: 1.75
+	img
+		width: 40vh
+		// padding: 0 100px
+		display: block
+		margin: 0 auto
+
+.iziModal .iziModal-header.iziModal-noSubtitle .iziModal-header-title
+	font-size: 1.9em
+	text-align: center
+	text-shadow: 0 3px 6px black /* Параметры тени */
+	margin-left: 5vh
+
+
+.iziModal .iziModal-header.iziModal-noSubtitle
+	padding-top: 0
+	padding-bottom: 0
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 20px
+
+.iziModal .iziModal-header.iziModal-noSubtitle .iziModal-header-title
+	padding: 0
+
+.iziModal .iziModal-header.iziModal-noSubtitle .iziModal-button
+	height: 4.5vh
+	width: 4.5vh
+	margin-top: -0.6vh
+	margin-right: 1.5vh
+
+.iziModal .iziModal-wrap
+	background: white
+
+.iziModal .iziModal-header
+	background: $green
+
+.iziModal
+	.first-p
+		text-align: center
+		font-size: 1.2em
+		letter-spacing: 1px
+		color: #626567
+	.main-p
+		margin-left: 25vh
+		line-height: 1.31
+		color: #626567
+		font-size: 1.15em
+		// padding: 30px 0
+	.p-free-lesson
+		font-size: 16px
+		color: #697983
+		text-align: center
+		>.green
+			color: $green
+	.modal-button-grp
+		text-align: center
+		.modal-button
+			font-size: 20px
+			background: #fff
+			padding: 3px 40px
+			box-shadow: 0 3px 20px rgba(0,0,0,0.16); /* Параметры тени */
+			letter-spacing: 1
+			position: relative
+			color: black
+			border: 2px solid $green;
+			text-decoration: none
+			// font-size: 22px
+			border-radius: 20px
+			padding: 0 15px
+			margin: 0 5px 15px 5px
+			box-shadow: 0 3px 20px rgba(0,0,0,0.16) /* Параметры тени */
+			&-right
+				// border-radius: 0 20px 20px 0
+				// margin-left: -8px
+				padding: 0 35px
+
+			&:focus
+				// color: $directionsTextColor
+				outline: 0
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: lighten($green, 5%)
+				&::after
+					opacity: .22
+			&:active
+				background-color: darken($green, 5%)
+				&::after
+					opacity: .32
+		.modal-button-left
+			padding: 0 55px
+			border: 1px solid #F2F2F2
+			box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16)
+			&:hover
+				border: 1px solid darken($green, 2%)
+				&::after
+					opacity: .22
+
+.iziModal-navigate > button
+	// bottom: 48%
+	// top: 48%
+	// width: 40px
+	// height: auto
+	// border-radius: 20px
+	// border: 1px $green solid
+	// opacity: 0.5
+
+
+// iModal Custom Demo Example Start	
+
+.hide
+	display: none
+
+
+.trigger-custom
+	padding: 10px 20px
+	border-radius: 3px
+	border: 0
+	background: #ccc
+	font-size: 14px
+	border-top: 1px solid #FFF
+	border-bottom: 1px solid #aaa
+	cursor: pointer
+
+.trigger-custom:hover
+	background:#d5d5d5
+
+
+#modal-custom .iziModal-content header
+	background: #eee
+	margin-bottom: 10px
+	overflow: hidden
+	border-radius: 3px 3px 0 0
+	width: 100%
+
+#modal-custom .iziModal-content header a
+	display: block
+	float: left
+	width: 50%
+	padding: 0
+	text-align: center
+	background: #ddd
+	color: #999
+	height: 73px
+	vertical-align: middle
+	line-height: 73px
+
+#modal-custom .iziModal-content header a.active
+	background: #fff
+	color: #777
+
+#modal-custom .iziModal-content section
+	padding: 30px
+
+#modal-custom .iziModal-content section input:not([type="checkbox"]), #modal-custom .iziModal-content section button
+	width: 100%
+	border-radius: 3px
+	border: 1px solid #ddd
+	margin-bottom: 26px
+	padding: 15px
+	font-size: 14px
+
+#modal-custom .iziModal-content section button
+	height: 46px
+	padding: 0
+
+#modal-custom .iziModal-content section input:focus
+	border-color:#28CA97
+
+#modal-custom .iziModal-content section label[for="check"]
+	margin-bottom: 26px
+	font-size: 14px
+	color: #999
+	display: block
+
+#modal-custom .iziModal-content section footer
+	overflow: hidden
+
+#modal-custom .iziModal-content section button
+	background: #28CA97
+	color: white
+	margin: 0
+	border: 0
+	cursor: pointer
+	width: 50%
+	float: left
+
+#modal-custom .iziModal-content section button:hover
+	opacity: 0.8
+
+#modal-custom .iziModal-content section button:nth-child(1)
+	border-radius: 3px 0 0 3px
+	background: #aaa
+
+#modal-custom .iziModal-content section button:nth-child(2)
+	border-radius: 0 3px 3px 0
+
+
+#modal-custom .iziModal-content .icon-close
+	background: #FFF
+	margin-bottom: 10px
+	position: absolute
+	right: -8px
+	top: -8px
+	font-size: 14px
+	font-weight: bold
+	border-radius: 50%
+	width: 30px
+	height: 30px
+	border: 0
+	color: #a9a9a9
+	cursor: pointer
+
+#modal-custom .iziModal-content .icon-close:hover, #modal-custom .iziModal-content .icon-close:focus
+	color: black
+
+// iModal Custom Demo Example End	
+
+.programms
+	text-align: center
+
+// Custom Test
+/* Base for label styling */
+#modal-assign [type="checkbox"]:not(:checked),
+#modal-assign [type="checkbox"]:checked
+	position: absolute
+	left: -9999px
+
+#modal-assign [type="checkbox"]:not(:checked) + label,
+#modal-assign [type="checkbox"]:checked + label
+	position: relative
+	padding-left: 1.95em
+	cursor: pointer
+
+
+/* checkbox aspect */
+#modal-assign
+	.sub-checkbox
+		// margin-left: 2vh
+
+// .float-right > p > label
+// 	float: right
+// 	display: block
+
+#modal-assign [type="checkbox"]:not(:checked) + label:before,
+#modal-assign [type="checkbox"]:checked + label:before
+	content: ''
+	position: absolute
+	left: 0
+	top: 0.25em
+	width: 1.25em; height: 1.25em
+	border: 2px solid #ccc
+	background: #fff
+	border-radius: 4px
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.1)
+
+/* checked mark aspect */
+#modal-assign [type="checkbox"]:not(:checked) + label:after,
+#modal-assign [type="checkbox"]:checked + label:after
+	content: '✔'
+	position: absolute
+	top: .3em
+	left: .1em
+	font-size: 1.3em
+	line-height: 0.8
+	color: $green
+	transition: all .2s
+
+/* checked mark aspect changes */
+#modal-assign [type="checkbox"]:not(:checked) + label:after
+	opacity: 0
+	transform: scale(0)
+
+#modal-assign [type="checkbox"]:checked + label:after
+	opacity: 1
+	transform: scale(1)
+
+
+/* accessibility */
+#modal-assign [type="checkbox"]:checked:focus + label:before,
+#modal-assign [type="checkbox"]:not(:checked):focus + label:before
+	border: 2px solid green
+
+
+/* hover style just for information */
+#modal-assign label:hover:before
+	border: 2px solid $green !important
+
+.programm-checkbox
+	padding-left: 15px
+	padding-right: 15px
+	.inline
+		// text-align: center
+		// margin: 0
+		// width: 100%
+	.inline > p, .inline > select
+		display: inline-block
+		width: auto
+	// .inline > select
+		// float: right
+
+#modal-assign
+	.form-horizontal .form-group
+		margin-left: 0
+		margin-right: 0
+		textarea
+			resize: none
+	.form-control
+		border-radius: 10px
+		font-size: 16px
+.form-control:focus
+		border-color: lighten($green, 20%)
+		outline: 0
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+
+
+
+
+
+/* Useless styles, just for demo design */
+
+// body {
+//   font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+//   color: #777;
+// }
+// h1, h2 {
+//   margin-bottom: .25em;
+//   font-weight: normal;
+//   text-align: center;
+// }
+// h2 {
+//   margin: .25em 0 2em;
+//   color: #aaa;
+// }
+// form
+// 	width: 7em
+// 	margin: 0 auto
+
+.txtcenter
+	margin-top: 4em
+	font-size: .9em
+	text-align: center
+	color: #aaa
+
+.copy
+	margin-top: 2em
+
+.copy a
+	text-decoration: none
+	color: #4778d9
+
+.noselect
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+
+@import "media" // Всегда в конце

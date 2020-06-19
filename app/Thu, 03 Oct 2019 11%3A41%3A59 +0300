@@ -1,0 +1,14 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head></head>
+	<body>
+	<table>
+	<tr><td>Имя: </td><td>Евгения</td></tr>
+	<tr><td>Телефон: </td><td>9278964045</td></tr>
+	<tr><td>Сообщение: </td><td>Дочь Ксения 3,5 года </td></tr>
+	<tr><td>Направления: </td><td>Современный танец,Эстрадный вокал,Художественная гимнастика</td></tr>
+	</table>
+	</body>
+	</html>

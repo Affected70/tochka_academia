@@ -1,0 +1,14 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head></head>
+	<body>
+	<table>
+	<tr><td>Имя: </td><td>Майя</td></tr>
+	<tr><td>Телефон: </td><td>89270223286</td></tr>
+	<tr><td>Сообщение: </td><td>Ищу занятия для дочери 4-х лет</td></tr>
+	<tr><td>Направления: </td><td>Музыкальный театр,Современный танец,Развитие и Коррекция</td></tr>
+	</table>
+	</body>
+	</html>

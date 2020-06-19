@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://xn--80aaapfskeqv7b9cvf.xn--p1ai/sitemap.xml
